@@ -26,6 +26,12 @@ export default (plop) => {
       },
       {
         type: 'input',
+        default: 'div',
+        name: 'componentElement',
+        message: 'Component element type'
+      },
+      {
+        type: 'input',
         default: `./${srcFolderExists ? 'src/' : ''}components`,
         name: "folder",
         message: "Component location",
