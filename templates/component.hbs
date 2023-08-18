@@ -1,0 +1,13 @@
+import React from 'react';
+
+export type {{ componentName }}Props = {};
+{{#if style}}
+
+import styles from './{{ componentName }}.module.scss';
+
+{{/if}}
+export const {{ componentName }} = (props: {{ componentName }}Props) => {
+  return <div{{#if style}} className={{ append '{' }}styles.{{ camelCase componentName }}{{ append '}' }}{{/if}} {...props} />;
+}
+
+export default {{ componentName }};

@@ -1,0 +1,13 @@
+{
+  "name": "util-react-component-generator",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "handlebars-helpers": "^0.10.0",
+    "plop": "^3.1.2"
+  },
+  "type": "module",
+  "bin": {
+    "generate-component": "./bin/generate-component.js"
+  }
+}

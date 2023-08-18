@@ -1,0 +1,10 @@
+import { render } from "@testing-library/react";
+
+import { {{ componentName }} } from "./{{ componentName }}";
+
+describe("{{ componentName }}", () => {
+  it("should render properly", () => {
+    const { asFragment } = render(<{{ componentName }} />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+});
